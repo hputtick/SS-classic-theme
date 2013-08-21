@@ -1,0 +1,17 @@
+.telephone {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 0.96;
+  border-top: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+  margin: 0 25px 25px;
+  padding: 15px 15px 15px 70px !important;
+  background-image: url(../custom-theme/assets/icon-tel.png);
+  background-position: 15px;
+  background-repeat: no-repeat;
+  font-family: georgia, sans-serif;
+}
+.telephone a {
+  color: #5d5d5d;
+  text-decoration: none;
+}

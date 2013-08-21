@@ -1,0 +1,55 @@
+@import "mixins.less";
+
+section.content-home{
+	.left;
+	
+		.main{
+			.left;
+			box-sizing: border-box;
+			margin-right: @global-number / 2px;
+			width: @site-width * .70 - 50px;
+			background-color: @white;
+			
+				article{
+					.border_bottom;
+				}
+				
+		}
+		
+		aside{
+			.left;
+			overflow: hidden;
+			box-sizing: border-box;
+			width: @site-width * .30;
+				
+		}
+		
+}
+
+.entry-content{
+
+	img:first-child{
+		padding-bottom: @global-number / 4px;
+	}
+
+	p{
+		padding: 0 @global-number / 4px @global-number / 4px;
+		
+			&:first-child{
+				padding-top: @global-number / 4px;
+			}
+			
+	}
+	
+	h1{
+		.font-30px;
+		margin-bottom: @global-number / 4px;
+	}
+	
+	h1, h2, h3, h4, h5, h6, blockquote{
+		padding: 0 @global-number / 4px;
+	}
+	
+}
+
+

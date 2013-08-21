@@ -1,0 +1,43 @@
+section.content-home {
+  float: left;
+}
+section.content-home .main {
+  float: left;
+  box-sizing: border-box;
+  margin-right: 50px;
+  width: 622px;
+  background-color: #ffffff;
+}
+section.content-home .main article {
+  border-bottom: solid 1px #cccccc;
+}
+section.content-home aside {
+  float: left;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 288px;
+}
+.entry-content img:first-child {
+  padding-bottom: 25px;
+}
+.entry-content p {
+  padding: 0 25px 25px;
+}
+.entry-content p:first-child {
+  padding-top: 25px;
+}
+.entry-content h1 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 0.8;
+  margin-bottom: 25px;
+}
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-content blockquote {
+  padding: 0 25px;
+}

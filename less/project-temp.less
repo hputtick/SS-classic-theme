@@ -1,0 +1,66 @@
+@import "mixins.less";
+
+#projects{
+	.left;
+	
+		.image-holder {
+			.left;
+			position: relative;
+			overflow: hidden;
+			width: 320px;
+			height: 320px;
+			
+				img{
+					max-width: none;
+				}
+				
+		}
+		
+		.image-holder-sidebar{
+			.left;
+			position: relative;
+			overflow: hidden;
+			width: 288px;
+			height: 150px;	
+		}
+		
+}
+
+.rollover{
+	position: absolute;
+	opacity: 0.5;
+	
+		&:hover{
+		  	.rollover-settings;
+		    left: -224px;
+			background-position: @null;
+	  	}
+	  	
+}
+
+.recent-projects {
+	.text-center;
+	padding: @global-number / 4px 0;
+}
+
+.major {
+	.text-center;
+	position: relative;
+	top: @global-number * .1px;
+	margin: 60px 0 30px;
+	border-top: solid 1px @grey + -20;
+}
+
+.reset-t{
+	.no-top;
+}
+
+.major h2 {
+	.font-19px;
+	position: relative;
+	top: -0.55em;
+	display: inline;
+	margin: 0;
+	padding: 0 1em 0 1em;
+	background: url(../custom-theme/assets/squairy_light.png);
+}

@@ -1,0 +1,59 @@
+#projects {
+  float: left;
+}
+#projects .image-holder {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 320px;
+  height: 320px;
+}
+#projects .image-holder img {
+  max-width: none;
+}
+#projects .image-holder-sidebar {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 288px;
+  height: 150px;
+}
+.rollover {
+  position: absolute;
+  opacity: 0.5;
+}
+.rollover:hover {
+  opacity: 1;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  left: -224px;
+  background-position: 0;
+}
+.recent-projects {
+  text-align: center;
+  padding: 25px 0;
+}
+.major {
+  text-align: center;
+  position: relative;
+  top: 10px;
+  margin: 60px 0 30px;
+  border-top: solid 1px #d2d2d2;
+}
+.reset-t {
+  margin-top: 0;
+}
+.major h2 {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.2632;
+  position: relative;
+  top: -0.55em;
+  display: inline;
+  margin: 0;
+  padding: 0 1em 0 1em;
+  background: url(../custom-theme/assets/squairy_light.png);
+}

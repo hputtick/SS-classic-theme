@@ -1,0 +1,146 @@
+// Sonstone Colours
+
+@font-color: #5D5D5D;
+@grey: #e6e6e6;
+@grey-border:#CCCCCC;
+@yellow: #F3E900;	
+@orange: #d65d03;
+@orange-dark: #5C2D0A;
+@white: #FFFFFF;
+	
+// Sonstone Widths
+
+@global-number: 100;
+@site-width: 960px;
+@null: 0;
+	
+// Sonstone gradients
+
+.footer-gradient(@start: #31353a , @stop: #2f3337){
+	background-color: @start;
+	background-image:-webkit-linear-gradient(top, @start, @stop);
+	background-image:-moz-linear-gradient(top, @start, @stop);
+	background-image:linear-gradient(top, @start, @stop);
+}
+
+// Sonstone Fonts
+
+@doc-font-size:16;
+@doc-line-height:24;
+
+// mixin
+
+// full-fat vertical rhythm
+.font-size (@size) {
+	margin-bottom: 0px + @doc-line-height;
+	margin-bottom: 0rem + (@doc-line-height / @doc-font-size);
+	font-size: 0px + @size;
+	font-size: 0rem + @size / @doc-font-size;
+	line-height: 0 + round(@doc-line-height / @size*10000) / 10000;
+}
+
+// just the REMs
+.font-rem (@size) {
+    font-size: 0px + @size;
+    font-size: 0rem + @size / @doc-font-size;
+}
+
+// just font-size and line-height
+.font (@size) {
+    font-size: 0px + @size;
+    font-size: 0rem + @size / @doc-font-size;
+    line-height: 0 + round(@doc-line-height / @size*10000) / 10000;
+}
+
+.font-12px(@string-font-12:12){
+	.font-rem(@string-font-12);
+}
+
+.font-13px(@string-font-13:13){
+	.font-rem(@string-font-13);
+}
+
+.font-14px(@string-font-14:14){
+	.font(@string-font-14);
+}
+
+.font-16px(@string-font-16:16){
+	.font-size(@string-font-16);
+}
+
+.font-18px(@string-font-18:18){
+	.font-size(@string-font-18);	
+}	
+
+.font-19px(@string-font-19:19){
+	.font-size(@string-font-19);	
+}
+
+.font-22px(@string-font-22:22){
+	.font-size(@string-font-22);	
+}	
+
+.font-25px-F(@string-font-25:25){
+	.font(@string-font-25);	
+}
+
+.font-30px(@string-font-30:30){
+	.font(@string-font-30);	
+}
+
+// Sonstone easy bits
+
+.left(@string:left){
+	float: (@string);
+}
+
+.right(@string:right){
+	float: (@string);
+}
+
+.float-none(@string:none){
+	float: (@string);
+}
+
+.bold(@string:bold){
+	font-weight: (@string);
+}
+
+.margin-center(@string:auto){
+	margin: (@string);
+}
+
+.text-center(@string:center){
+	text-align: (@string);
+}
+
+.italic(@string:italic){
+	font-style: (@string);
+}
+
+.justify(@string:justify){
+	text-align: (@string);
+}
+
+.rollover-settings(@op:1, @time: 1s){	
+	opacity: @op;
+	-webkit-transition: all @time ease-in-out;
+	-moz-transition: all @time ease-in-out;
+	transition: all @time ease-in-out;
+}
+
+.no-bottom(@string: @null){
+	margin-bottom: @string;
+}
+
+.no-top(@string: @null){
+	margin-top: @string;
+}
+
+.border_top(@state:solid, @thickness: 1px){
+	border-top: @state @thickness @grey-border;
+}
+
+.border_bottom(@state:solid, @thickness: 1px){
+	border-bottom: @state @thickness @grey-border;
+}

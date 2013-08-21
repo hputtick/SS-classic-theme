@@ -1,0 +1,41 @@
+@import "mixins.less";
+
+.custom-sidebar-item{
+	background-color: @white;
+	
+		.item{
+			.left;
+			.border_bottom;
+			box-sizing: border-box;
+			margin-bottom: @global-number / 2px;
+			padding: @global-number / 4px;
+			width: @global-number *1%;
+			background-color: @white;
+			
+				li{
+					.border_top;
+					.font-13px;
+					padding: 15px 0;
+					
+						a{
+							color: @orange;
+							
+								&:hover{
+									text-decoration: none;
+								}
+								
+						}
+						
+						&:first-child{
+							border-top:none;
+						}
+						
+				}
+				
+				h3{
+					margin-bottom: 15px;
+				}
+				
+		}
+		
+}
