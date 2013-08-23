@@ -20,6 +20,7 @@
 a.logo img {
   text-align: center;
   margin: 50px 0;
+  width: 180px;
 }
 span {
   display: block;
@@ -54,13 +55,4 @@ span {
 .main-navigation ul.nav-menu.toggled-on,
 .menu-toggle {
   display: inline-block;
-}
-.menu-item-146 a {
-  overflow: hidden;
-  width: 180px;
-  height: 85px;
-  background-image: url(../custom-theme/assets/logo.png);
-  background-position: center 60px;
-  background-repeat: no-repeat;
-  text-indent: 100%;
 }

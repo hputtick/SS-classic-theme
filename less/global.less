@@ -81,3 +81,81 @@ h3{
 	content: "";
 }
 
+.major-404 {
+	.text-center;
+	position: relative;
+	top: @global-number * .1px;
+	margin: 50px;
+	border-top: solid 1px @grey + -20;
+		
+		h2{
+			font-size: 80px !important;
+			text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.56);
+			color: @orange;
+			position: relative;
+			top: -0.55em;
+			display: inline;
+			margin: @null;
+			padding: 0 1em 0 1em;
+			background: url(../custom-theme/assets/squairy_light.png);
+		}
+
+}
+
+.message-404 {
+	width: 500px;
+	margin: auto;
+	text-align: center;
+	
+		.content{
+			margin-bottom: 70px;
+			
+				h2{
+					font-size: 40px;
+					text-align: center;
+					padding: @null;
+					margin: @null;
+				}
+				
+				p{
+					padding: 0 !important;
+					margin-bottom: 25px;
+					
+						a{
+							color: @font-color;
+							text-decoration: none;
+							font-weight: 500;
+						}
+						
+				}
+				
+		}
+		
+}
+
+#searchform{
+
+	input#s{
+		background: white;
+		border-radius: 4px;
+		padding: 5px 10px;
+	}
+	
+}
+
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required,
+.wpcf7-form-control.wpcf7-textarea,
+.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email{
+	border: none;
+	padding: 0 25px;
+	height: 48px;
+	background-color: #EBEBEB;
+	outline-width: 0;
+	width: 50.847457627119%;
+	font-size: 1em;
+}
+
+.wpcf7-form-control.wpcf7-textarea{
+	padding-top: 25px!important;	
+	min-height: 200px;
+}

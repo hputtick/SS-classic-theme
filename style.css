@@ -262,7 +262,7 @@ h3 {
   outline: 0;
   border: 0;
   border-radius: 5px;
-  background: #d65d03;
+  background: #fcb134;
   color: #ffffff !important;
   text-decoration: none;
   font-weight: 700;
@@ -281,6 +281,67 @@ h3 {
 .format-status .entry-header:after {
   display: table;
   content: "";
+}
+.major-404 {
+  text-align: center;
+  position: relative;
+  top: 10px;
+  margin: 50px;
+  border-top: solid 1px #d2d2d2;
+}
+.major-404 h2 {
+  font-size: 80px !important;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.56);
+  color: #fcb134;
+  position: relative;
+  top: -0.55em;
+  display: inline;
+  margin: 0;
+  padding: 0 1em 0 1em;
+  background: url(../custom-theme/assets/squairy_light.png);
+}
+.message-404 {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+.message-404 .content {
+  margin-bottom: 70px;
+}
+.message-404 .content h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.message-404 .content p {
+  padding: 0 !important;
+  margin-bottom: 25px;
+}
+.message-404 .content p a {
+  color: #5d5d5d;
+  text-decoration: none;
+  font-weight: 500;
+}
+#searchform input#s {
+  background: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required,
+.wpcf7-form-control.wpcf7-textarea,
+.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email {
+  border: none;
+  padding: 0 25px;
+  height: 48px;
+  background-color: #EBEBEB;
+  outline-width: 0;
+  width: 50.847457627119%;
+  font-size: 1em;
+}
+.wpcf7-form-control.wpcf7-textarea {
+  padding-top: 25px!important;
+  min-height: 200px;
 }
 /*
 
@@ -320,6 +381,7 @@ Time to add the structural layout Styles.
 a.logo img {
   text-align: center;
   margin: 50px 0;
+  width: 180px;
 }
 span {
   display: block;
@@ -354,15 +416,6 @@ span {
 .main-navigation ul.nav-menu.toggled-on,
 .menu-toggle {
   display: inline-block;
-}
-.menu-item-146 a {
-  overflow: hidden;
-  width: 180px;
-  height: 85px;
-  background-image: url(../custom-theme/assets/logo.png);
-  background-position: center 60px;
-  background-repeat: no-repeat;
-  text-indent: 100%;
 }
 section.content-home {
   float: left;
@@ -426,7 +479,7 @@ section.content-home aside {
   padding: 15px 0;
 }
 .custom-sidebar-item .item li a {
-  color: #d65d03;
+  color: #fcb134;
 }
 .custom-sidebar-item .item li a:hover {
   text-decoration: none;
@@ -608,9 +661,6 @@ Finally lets Add the template styles for the different templates
   margin: 60px 0 30px;
   border-top: solid 1px #d2d2d2;
 }
-.reset-t {
-  margin-top: 0;
-}
 .major h2 {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
@@ -623,6 +673,9 @@ Finally lets Add the template styles for the different templates
   margin: 0;
   padding: 0 1em 0 1em;
   background: url(../custom-theme/assets/squairy_light.png);
+}
+.reset-t {
+  margin-top: 0;
 }
 .telephone {
   font-size: 25px;
@@ -641,3 +694,13 @@ Finally lets Add the template styles for the different templates
   color: #5d5d5d;
   text-decoration: none;
 }
+/*
+
+Mediaqueries
+-------------------------------------------
+
+Additonal media queries for targeting high res screens 
+
+- mediaqueries
+
+------------------------------------------- */
